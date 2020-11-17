@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "admin",
+      "last_name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "isAdmin": "true"
+    },
+    {
+      "id": 2,
+      "first_name": "vas",
+      "last_name": "vas",
+      "email": "vas@gmail.com",
+      "password": "abc",
+      "isAdmin": "false"
+    },
+    {
+      "first_name": "ed",
+      "last_name": "ed",
+      "email": "ed@gmail.com",
+      "password": "abc",
+      "isAdmin": null,
+      "id": 3
+    },
+    {
+      "first_name": "io",
+      "last_name": "io",
+      "email": "io@gm.com",
+      "password": "abc",
+      "isAdmin": null,
+      "id": 4
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "eventName": "Fall Festival",
+      "price": "50"
+    },
+    {
+      "id": 2,
+      "eventName": "Christmas",
+      "price": "80"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "eventName": "Fall Festival",
+      "description": "Fall Festival may refer to any festival during the fall season",
+      "location": "Virginia",
+      "date": "29 Nov 2020",
+      "imgUrl": "http://getwallpapers.com/wallpaper/full/4/b/e/253470.jpg"
+    },
+    {
+      "id": 2,
+      "eventName": "Christmas",
+      "description": "Christmas (is an annual festival commemorating the birth of Jesus Christ.",
+      "location": "DC",
+      "date": "25 Dec 2020",
+      "imgUrl": "http://getwallpapers.com/wallpaper/full/6/e/c/12458.jpg"
+    },
+    {
+      "id": 3,
+      "eventName": "4th July 2020",
+      "description": "A federal holiday commemorating the Declaration of Independence of the USA",
+      "location": "New york",
+      "date": "4th July 2020",
+      "imgUrl": "http://getwallpapers.com/wallpaper/full/d/6/5/106490.jpg"
+    },
+    {
+      "id": 4,
+      "eventName": "New Year",
+      "description": "New Year is the time or day at which a new calendar year begins",
+      "location": "Virginia",
+      "date": "31 Dec 2020",
+      "imgUrl": "https://patch.com/img/cdn20/shutterstock/24240997/20200616/075758/styles/patch_image/public/shutterstock-1121361905___16194556770.jpg"
+    }
+  ]
+}

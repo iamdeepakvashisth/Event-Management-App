@@ -1,0 +1,13 @@
+body{
+      background-image: url('http://getwallpapers.com/wallpaper/full/3/0/e/253668.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 335px;
+    height: 230px;
+  }
