@@ -14,9 +14,7 @@ import { CreateEventComponent } from './create-event/create-event.component';
 import { DisplayEventsComponent } from './display-events/display-events.component';
 import { BuyTicketsComponent } from './buy-tickets/buy-tickets.component';
 import { CreateTicketComponent } from './create-ticket/create-ticket.component';
-import { DisplayTicketsComponent } from './display-tickets/display-tickets.component';
-
-
+import { TicketSaleComponent } from './ticket-sale/ticket-sale.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +28,7 @@ import { DisplayTicketsComponent } from './display-tickets/display-tickets.compo
     DisplayEventsComponent,
     BuyTicketsComponent,
     CreateTicketComponent,
-    DisplayTicketsComponent
+    TicketSaleComponent
   ],
   imports: [
     BrowserModule,

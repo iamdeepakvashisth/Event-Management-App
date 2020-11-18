@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Global } from './global';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Event-Management';
+  isAdmin : boolean 
+  constructor(private global: Global) { this.isAdmin = this.global.isAdmin}
+
+
 }
+

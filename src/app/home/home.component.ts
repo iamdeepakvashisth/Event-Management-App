@@ -12,7 +12,8 @@ export class HomeComponent implements OnInit {
   eventName: string
   description: string
   location: string
-  date: string
+  startdate: any
+  enddate:any
   constructor(private eService: EventsService, private http: HttpClient) { }
 
   ngOnInit(): void {

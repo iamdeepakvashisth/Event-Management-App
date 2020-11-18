@@ -1,1 +1,24 @@
-<p>buy-tickets works!</p>
+<hr>
+<div>
+	
+	<table  class="table table-hover">
+		<!-- Table Headers -->
+		<thead class="thead-dark">
+			<tr>
+				<th>Event Name</th>
+				<th>Price</th>
+				<th>Quantity</th>
+				<th>Buy</th>
+			</tr>
+		</thead>
+		<!-- table data  -->
+		<tr *ngFor="let t of ticket">
+			<td>{{t.eventName}}</td>
+			<td>{{t.price}}</td>
+			<td></td>
+			<td>
+				<button (click)= "deleteEvent(e.id)" class="btn btn-danger btn-sm">  Buy </button>
+			</td>
+		</tr>
+	</table>
+</div>

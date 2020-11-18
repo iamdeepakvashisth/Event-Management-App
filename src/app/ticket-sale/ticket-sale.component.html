@@ -1,0 +1,36 @@
+<hr>
+<div *ngIf="ticketSale">
+    <h3>
+        {{ title }}
+        <button class="btn btn-success btn-sm" (click)="exportexcel()">Export Data</button>
+    </h3>
+    <table id="excel-table" class="table table-hover">
+        <!-- Table Headers -->
+        <thead class="thead-dark">
+            <tr>
+                <th>Event Name</th>
+                <th>Customer Email</th>
+                <th>No of Tickets</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <!-- table body data  -->
+        <tbody>
+            <tr *ngFor="let s of ticketSale">
+                <td>{{s.eventName}}</td>
+                <td>{{s.customerEmail}}</td>
+                <td>{{s.noOfTickets}}</td>
+                <td>{{s.noOfTickets * 50 | currency:'USD'}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- table footer for sum data  -->
+            <tr>
+                <th>Total</th>
+                <td></td>
+                <td><strong>{{totalQty}}</strong></td>
+                <td><strong>300</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

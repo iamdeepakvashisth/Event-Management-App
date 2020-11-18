@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Users } from 'src/app/models/users';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-top-nav',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService: UsersService) { }
+  users: Users;
+  loggedUser;
 
   ngOnInit(): void {
+    this.userService.loggedUser.subscribe(user => {
+      console.log('top nav', user);
+      this.loggedUser = user;
+    })
   }
-
 }

@@ -1,0 +1,22 @@
+.btn-success{
+    float: right;
+    border-radius: 5px;
+}
+
+.btn-success:hover {
+    background-color: black;
+    color: white;
+  }
+
+.btn-warning{
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-warning:hover {
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+  }
+

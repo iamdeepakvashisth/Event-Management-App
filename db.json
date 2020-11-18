@@ -6,7 +6,7 @@
       "last_name": "admin",
       "email": "admin@gmail.com",
       "password": "admin",
-      "isAdmin": "true"
+      "isAdmin": true
     },
     {
       "id": 2,
@@ -14,14 +14,14 @@
       "last_name": "vas",
       "email": "vas@gmail.com",
       "password": "abc",
-      "isAdmin": "false"
+      "isAdmin": false
     },
     {
       "first_name": "ed",
       "last_name": "ed",
       "email": "ed@gmail.com",
       "password": "abc",
-      "isAdmin": null,
+      "isAdmin": false,
       "id": 3
     },
     {
@@ -29,7 +29,7 @@
       "last_name": "io",
       "email": "io@gm.com",
       "password": "abc",
-      "isAdmin": null,
+      "isAdmin": false,
       "id": 4
     }
   ],
@@ -42,24 +42,28 @@
     {
       "id": 2,
       "eventName": "Christmas",
-      "price": "80"
+      "price": "10"
     }
   ],
   "events": [
     {
       "id": 1,
       "eventName": "Fall Festival",
-      "description": "Fall Festival may refer to any festival during the fall season",
-      "location": "Virginia",
-      "date": "29 Nov 2020",
-      "imgUrl": "http://getwallpapers.com/wallpaper/full/4/b/e/253470.jpg"
+      "description": "Christmas (is an annual festival commemorating the birth of Jesus Christ.",
+      "location": "DC",
+      "startdate": "2020-11-18T00:33",
+      "enddate": "2020-11-18T13:34",
+      "price": "50",
+      "imgUrl": "http://getwallpapers.com/wallpaper/full/6/e/c/12458.jpg"
     },
     {
       "id": 2,
       "eventName": "Christmas",
       "description": "Christmas (is an annual festival commemorating the birth of Jesus Christ.",
       "location": "DC",
-      "date": "25 Dec 2020",
+      "startdate": "2020-11-18T00:33",
+      "enddate": "2020-11-18T13:34",
+      "price": "10",
       "imgUrl": "http://getwallpapers.com/wallpaper/full/6/e/c/12458.jpg"
     },
     {
@@ -67,7 +71,9 @@
       "eventName": "4th July 2020",
       "description": "A federal holiday commemorating the Declaration of Independence of the USA",
       "location": "New york",
-      "date": "4th July 2020",
+      "startdate": "2020-11-18T00:33",
+      "enddate": "2020-11-18T13:34",
+      "price": "150",
       "imgUrl": "http://getwallpapers.com/wallpaper/full/d/6/5/106490.jpg"
     },
     {
@@ -75,8 +81,76 @@
       "eventName": "New Year",
       "description": "New Year is the time or day at which a new calendar year begins",
       "location": "Virginia",
-      "date": "31 Dec 2020",
+      "startdate": "2020-11-18T00:33",
+      "enddate": "2020-11-18T13:34",
+      "price": "150",
       "imgUrl": "https://patch.com/img/cdn20/shutterstock/24240997/20200616/075758/styles/patch_image/public/shutterstock-1121361905___16194556770.jpg"
+    },
+    {
+      "id": 5,
+      "eventName": "New Year",
+      "description": "New Year is the time or day at which a new calendar year begins",
+      "location": "Virginia",
+      "startdate": "2020-11-18T00:33",
+      "enddate": "2020-11-18T13:34",
+      "price": "30",
+      "imgUrl": "https://patch.com/img/cdn20/shutterstock/24240997/20200616/075758/styles/patch_image/public/shutterstock-1121361905___16194556770.jpg"
+    },
+    {
+      "id": 6,
+      "eventName": "New Year",
+      "description": "New Year is the time or day at which a new calendar year begins",
+      "location": "Virginia",
+      "startdate": "2021-01-01T00:00",
+      "enddate": "2020-11-18T13:34",
+      "price": "150",
+      "imgUrl": "https://patch.com/img/cdn20/shutterstock/24240997/20200616/075758/styles/patch_image/public/shutterstock-1121361905___16194556770.jpg"
+    },
+    {
+      "id": 7,
+      "eventName": "New Year",
+      "description": "New Year is the time or day at which a new calendar year begins",
+      "location": "Virginia",
+      "startdate": "2021-01-01T00:00",
+      "enddate": "2020-11-18T13:34",
+      "price": "150",
+      "imgUrl": "https://patch.com/img/cdn20/shutterstock/24240997/20200616/075758/styles/patch_image/public/shutterstock-1121361905___16194556770.jpg"
+    },
+    {
+      "eventName": "Republic Day",
+      "description": "Republic Day",
+      "location": "India gate ",
+      "startdate": "2020-11-18T00:33",
+      "enddate": "2020-11-18T13:34",
+      "price": "100",
+      "imgUrl": "http://getwallpapers.com/wallpaper/full/d/6/5/106490.jpg",
+      "id": 8
+    }
+  ],
+  "ticketSale": [
+    {
+      "id": 1,
+      "eventName": "Fall Festival",
+      "customerEmail": "george@gmail.com",
+      "noOfTickets": 2
+    },
+    {
+      "id": 2,
+      "eventName": "Christmas",
+      "customerEmail": "chris@gmail.com",
+      "noOfTickets": 1
+    },
+    {
+      "id": 3,
+      "eventName": "Fall Festival",
+      "customerEmail": "fallamhan@gmail.com",
+      "noOfTickets": 2
+    },
+    {
+      "id": 4,
+      "eventName": "New Year",
+      "customerEmail": "newman@gmail.com",
+      "noOfTickets": 1
     }
   ]
 }

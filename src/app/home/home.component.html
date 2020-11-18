@@ -6,10 +6,11 @@
             <div class="card shadow p-2 mb-5 bg-white rounded" style="width: 22rem; height: 27rem;">
                 <img class="card-img-top" src="{{e.imgUrl}}" alt="Card image cap">
                 <div class="card-body">
-                    {{e.date}}
+                  From  <strong> {{e.startdate | date }} </strong>   to   <strong> {{e.enddate | date }}</strong>
                     <h5 class="card-title">{{e.eventName}}</h5>
                     {{e.description}} <br> Location: {{e.location}}  
-                    <a class="btn btn-warning" style="float: right"  role="button">Register</a><br>
+                    <a class="btn btn-warning" [routerLink]="['/buyTickets']" routerLinkActive="active-link"
+                     style="float: right"  role="button">Register</a><br>
                 </div>
             </div> 
         </div>

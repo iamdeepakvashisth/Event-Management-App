@@ -1,1 +1,33 @@
-<p>display-events works!</p>
+<hr>
+<div *ngIf="event">
+	<h3>
+		{{title}}
+	<button class="btn btn-warning btn-sm" [routerLink]="['/addEvent']" routerLinkActive="active-link">Add +</button>
+	<button class="btn btn-success btn-sm" (click)="exportexcel()">Export Data</button>
+    </h3>
+	
+	<table id="excel-table" class="table table-hover">
+		<!-- Table Headers -->
+		<thead class="thead-dark">
+			<tr>
+				<th>ID</th>
+				<th>Event Name</th>
+				<th>Description</th>
+				<th>Location</th>
+				<th>Event Date</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<!-- table data  -->
+		<tr *ngFor="let e of event">
+			<td>{{e.id}}</td>
+			<td>{{e.eventName}}</td>
+			<td>{{e.description}}</td>
+			<td>{{e.location}}</td>
+			<td>{{e.startdate | date}}</td>
+			<td>
+				<button (click)= "deleteEvent(e.id)" class="btn btn-danger btn-sm">  Delete </button>
+			</td>
+		</tr>
+	</table>
+</div>

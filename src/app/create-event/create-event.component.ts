@@ -21,20 +21,33 @@ export class CreateEventComponent implements OnInit {
   }
   buildForm() {
     this.addEventForm = this.builder.group({
-      first_name: ['', Validators.required],
-      last_name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
-     
+      eventName: ['', Validators.required],
+      description: ['', Validators.required],
+      location: ['', Validators.required],
+      startdate: ['', Validators.required],
+      enddate: ['', Validators.required],
+      price:['', Validators.required],
+      imgUrl: ['', Validators.required]
     })
   }
   handleSubmit(){
     console.log(this.addEventForm.value);
-
     this.data = this.addEventForm.value
     this.eService.addEvent(this.data)
       .subscribe((event) => {
+        this.router.navigate(['/displayEvent'] );
+        this.clearEvent();
       })
-      this.router.navigate(['/home'] );
+  }
+  clearEvent(){
+    this.eService.currentEvent={
+      id:null,
+      eventName: '',
+      description: '',
+      location: '',
+      startdate: '',
+      enddate: '',
+      price:null
+    };
   }
 }

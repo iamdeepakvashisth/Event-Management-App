@@ -3,18 +3,24 @@ export class Event {
         eventName: string
         description: string
         location: string
-        date: string
+        startdate: any
+        enddate:any
+        price:number
 
         constructor(
                 id: number,
                 eventName: string,
                 description: string,
                 location: string,
-                date: string) {
+                startdate: any,
+                enddate:any,
+                price:number) {
                 this.id = id
                 this.eventName = eventName
                 this.description = description
                 this.location = location
-                this.date = date
+                this.startdate = startdate
+                this.enddate=enddate
+                this.price=price
         }
 }

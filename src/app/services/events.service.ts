@@ -9,6 +9,17 @@ import { Event } from 'src/app/models/event';
 export class EventsService {
 
   apiUrl: string = 'http://localhost:3000/events'
+
+  currentEvent: Event = {
+    id:null,
+    eventName: '',
+    description: '',
+    location: '',
+    startdate: '',
+    enddate:'',
+    price:null
+  }
+
   constructor(private http: HttpClient) { }
 
   getEvent(): Observable<Event[]> {
@@ -16,5 +27,11 @@ export class EventsService {
   }
   addEvent(data): Observable<Event> {
     return this.http.post<Event>(this.apiUrl, data)
+  }
+  updateEvent(data): Observable<Event> {
+    return this.http.put<Event>(this.apiUrl, data)
+  }
+  deleteEvent(id:number): Observable<Event> {
+    return this.http.delete<Event>(this.apiUrl + '/'+id)
   }
 }
